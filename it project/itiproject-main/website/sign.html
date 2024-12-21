@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Explore the World</title>
+  <style>
+    /* Global body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('sign.jpeg'); /* Replace with the actual path of your image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Optional: makes the background image stay fixed when scrolling */
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Container for centering the form */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    /* Form container styling */
+    .form-container {
+      background: rgba(0, 0, 0, 0.6); /* Transparent black background for contrast */
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Heading styling */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #ff7f50; /* Travel-inspired color */
+      letter-spacing: 1px;
+    }
+
+    /* Paragraph styling */
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    /* Form styling */
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    /* Input field styling */
+    input {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #ff7f50; /* Highlighted border on focus */
+      outline: none;
+    }
+
+    /* Button styling */
+    .btn {
+      padding: 15px;
+      background-color: #ff7f50; /* Vibrant coral color for the button */
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff5722; /* Darker coral color on hover */
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Login redirect text styling */
+    .login-redirect {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    .login-redirect a {
+      color: #ff7f50;
+      text-decoration: none;
+    }
+
+    .login-redirect a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Sign Up for Your Next Adventure</h1>
+      <p>Create an account to explore new destinations and book your next journey!</p>
+      
+      <form action="#" method="POST" class="signup-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        
+        <label for="passport">Passport Number</label>
+        <input type="text" id="passport" name="passport" required placeholder="Enter your passport number">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Create a password">
+        
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      
+      <p class="login-redirect">Already have an account? <a href="#">Log In</a></p>
+    </div>
+  </div>
+</body>
+</html>
