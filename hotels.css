@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.section_container{
+    max-width:1200px;
+    margin: auto;
+    padding: 80px 16px;
+}
+
+.section_header{
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: flex;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.signup-container{
+    text-align: center;
+    margin: 0px;
+}
+.btn-signup{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f9a825;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #00000033;
+    transition: background-color 0.3 ease;
+}
+.btn-signup:hover{
+    background-color: #ffcc00;
+}
+
+.navbar{
+    margin:auto;
+    padding:15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #009688;
+    color: white;
+}
+.navbar .logo{
+    font-size: 24px;
+    font-weight:bold;
+}
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+    gap:15px;
+}
+.navbar .nav-links li a{
+    color:white;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar .nav-links li a:hover{
+    color: #f9a825
+}
+
+.header_container{
+    padding: 16px 16px 80px 16px;
+}
+.header_image_container{
+    position: relative;
+    min-height: 500px;
+    background-image:url(hotel1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.header_content{
+    max-width: 600px;
+    padding:80px 32px;
+}
+.header_content h1{
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #f9efef;
+}
+.header_content p{
+    color: #ffffff;
+    font-size: 23px;
+}
+.Booking_container{
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 48px 32px;
+    background-color: #ffffffb3;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+}
+.Booking_container form{
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+.Booking_container .input_group{
+    width: 100%;
+    position: relative;   
+}
+.Booking_container label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 19.2px;
+    font-weight: 500;
+    color: #333333;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.Booking_container input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #435681;
+    color: #333333;
+}
+
+.Booking_container input:focus ~ label{
+    font-size: 13px;
+    top: 0;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    top: -10px;
+}
+
+input[type]:placeholder-shown+label{
+    top:0px;
+}
+input[type="date"]:focus + label,
+input[type="date"]:not(:placeholder-shown) + label{
+    top: -10px;
+}
+
+.Booking_container .form_group p{
+    margin-top: 8px;
+    font-size: 13px;
+    color: #767268;
+}
+
+.Booking_container .btn{
+    padding: 16px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #f9a825;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Booking_container .btn:hover{
+    background-color: #ffcc00;
+}
+.popular_grid{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.popular_card{
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 5px 5px 20px #0000004d;
+}
+
+.popular_grid .popular_card:hover{
+    box-shadow: 5px 5px 20px #000000;
+}
+
+.popular_content{
+    padding: 16px;
+}
+.popular_card_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+.popular_card_header h4{
+    font-size: 19px;
+    font-weight: 600;
+    color: #333333;
+}
+.popular_content p{
+    color: #767268;
+}
+
+@media (width <900px){
+    .Booking_container form{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .popular_grid{
+        grid-template-columns: repeat(2,1fr);
+        gap:16px;
+    }
+}

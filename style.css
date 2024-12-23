@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #009688;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f9a825;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Features Section */
+.features {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+/* Content Section Styling */
+.content-section {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.text-content h2 {
+    color: #009688;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.text-content .btn:hover {
+    background-color: #00796b;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #555;
+}
+
+/* Destinations Section */
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.welcome h2 {
+    color: #009688;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #555;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Highlights Section */
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.highlight-item {
+    text-align: center;
+    max-width: 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.highlight-item h3 {
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    color: #555;
+    font-size: 14px;
+}
+/* Sign Up Button Styling */
+.signup-container {
+    text-align: center; /* يخلي الزرار في المنتصف */
+    margin: 0px; /* مسافة فوق وتحت */
+}
+
+.btn-signup {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f9a825; /* لون الزرار */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #ffcc00; /* تغيير اللون عند التحريك */
+}
